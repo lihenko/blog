@@ -54,7 +54,7 @@ export default function ContactPage() {
             <div className="container max-w-5xl grid lg:grid-cols-2 gap-12">
 
                 {/* Form */}
-                <div className="p-6 border rounded-2xl bg-white">
+                <div className="px-2 py-3 md:p-6 border rounded-2xl bg-white">
                     <h2 className="text-2xl font-semibold mb-6">
                         Send a message
                     </h2>

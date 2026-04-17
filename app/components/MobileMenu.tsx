@@ -79,9 +79,12 @@ export default function MobileMenu({ menu, open, onClose }: Props) {
             </Link>
 
             <Link
-              href="#"
+              href="https://www.fiverr.com/s/kLB16gW"
               onClick={onClose}
               className="block text-center text-sm mt-3 text-gray-500 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            
             >
               View Fiverr Profile
             </Link>

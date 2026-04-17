@@ -171,7 +171,7 @@ export default function WordPressMaintenancePage() {
 
                     <div className="flex flex-wrap -mx-4 items-center">
 
-                    <div className="w-full lg:w-1/2 px-4 lg:order-2 space-y-6">
+                    <div className="w-full lg:w-1/2 px-4 lg:order-2 space-y-6 mb-8 lg:mb-0">
 
                         <div className="flex gap-3">
                         <Search className="w-5 h-5 text-primary mt-1 shrink-0" />
@@ -219,7 +219,7 @@ export default function WordPressMaintenancePage() {
 
                     <div className="flex flex-wrap -mx-4 items-center">
 
-                    <div className="w-full lg:w-1/2 px-4 space-y-8">
+                    <div className="w-full lg:w-1/2 px-4 space-y-8 mb-8 lg:mb-0">
 
                         <div className="flex gap-3 mb-6">
                         <Search className="w-5 h-5 text-primary mt-1 shrink-0" />
