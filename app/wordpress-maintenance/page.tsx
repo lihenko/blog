@@ -6,7 +6,7 @@ import Image from "next/image";
 
 
 export const metadata: Metadata = {
-  title: "WordPress Maintenance Service | Ongoing Support & Care",
+  title: "WordPress Maintenance Service",
   description:
     "Reliable WordPress maintenance service. регулярні оновлення, безпека, резервні копії та підтримка для стабільної роботи вашого сайту.",
 

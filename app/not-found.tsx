@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Page not found | WP Expert",
+  title: "Page not found",
   description:
     "The page you're looking for doesn't exist. Explore WordPress speed optimization, bug fixes, and Next.js migration services.",
   robots: {

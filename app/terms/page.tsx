@@ -1,4 +1,14 @@
 import PageTitle from "@/app/components/PageTitle";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Use",
+  description: "Read the terms and conditions for using WP Expert services and website.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+}
 
 export default function TermsOfServicePage() {
   return (

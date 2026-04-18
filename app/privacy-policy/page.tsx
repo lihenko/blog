@@ -1,4 +1,15 @@
 import PageTitle from "@/app/components/PageTitle";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "Learn how WP Expert collects, uses, and protects your personal data.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+}
 
 export default function PrivacyPolicyPage() {
   return (
