@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@plugin "@tailwindcss/typography";
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -36,6 +38,9 @@ h1, h2, h3 {
 @layer components {
   .container {
     @apply mx-auto px-4;
+  }
+  a{
+    @apply cursor-pointer;
   }
 }
 
@@ -112,4 +117,20 @@ h1, h2, h3 {
 
 .custom-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: var(--color-primary);
+}
+
+.prose img {
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.prose a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.prose blockquote {
+  border-left: 4px solid #e5e7eb;
+  padding-left: 16px;
+  font-style: italic;
 }

@@ -24,6 +24,7 @@ const trustMenu = [
   { label: "All Services", href: "/services" },
   { label: "About Me", href: "/about" },
   { label: "Testimonials", href: "/testimonials" },
+  { label: "Blog", href: "/blog" },
 ];
 
 export default function Footer() {
