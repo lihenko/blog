@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import PageTitle from "@/app/components/PageTitle";
 import { Bug, Wrench, Gauge, Code2 } from "lucide-react";
-import Services from "../components/Services";
+import Services from "@/app/components/Services";
 
 export const metadata: Metadata = {
   title: "Services & Migration",

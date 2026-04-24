@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import { Zap, Brain, Rocket } from "lucide-react";
 import Testimonials from "@/app/components/Testimonials";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About me",
@@ -61,10 +62,12 @@ export default function AboutPage() {
                 <div className="container">
                     <div className="flex flex-wrap -mx-4 items-center">
                         <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0 lg:order-2">
-                            <img
+                            <Image
                             src="/VladyslavLykhenkoWithNotebook.webp"
                             alt="Vladyslav Lykhenko - WordPress & Next.js Developer"
                             className="mx-auto"
+                            priority
+                            fetchPriority="high"
                             />
                         </div>
                         <div className="w-full lg:w-1/2 px-4 lg:order-1 xl:px-36">

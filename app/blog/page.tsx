@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import styles from "@/app/components/BlogContent.module.css";
 
 import { Breadcrumbs } from "@/app/components/Breadcrumbs";
 import { getPosts, getPostUrl, stripHtml } from "@/app/lib/wp";
@@ -200,7 +201,7 @@ export default async function BlogPage({ searchParams }: Props) {
           )}
         </div>
       </section>
-      <section className="prose prose-lg mx-auto mb-16 lg:mb-24 max-w-4xl bg-gray-50 p-6 rounded-xl">
+      <section className={styles.prose + " prose-lg mx-auto mb-16 lg:mb-24 max-w-4xl bg-gray-50 p-6 rounded-xl"}>
             <div>
                 <p>This blog focuses on solving real website problems and helping businesses keep their WordPress and Next.js projects running smoothly. Here you’ll find practical articles about fixing errors, improving website speed, and maintaining stable performance.</p>
 

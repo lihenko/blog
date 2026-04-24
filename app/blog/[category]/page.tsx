@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import styles from "@/app/components/BlogContent.module.css";
 
 import { Breadcrumbs } from "@/app/components/Breadcrumbs";
 import {
@@ -237,7 +238,7 @@ export default async function CategoryPage({
         </div>
 
         {currentCategory.description && (
-          <section className="prose prose-lg mx-auto mt-16 max-w-4xl bg-gray-50 p-6 rounded-xl">
+          <section className={styles.prose + " prose-lg mx-auto mt-16 max-w-4xl bg-gray-50 p-6 rounded-xl"}>
             <div
               dangerouslySetInnerHTML={{
                 __html: currentCategory.description,

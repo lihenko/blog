@@ -11,6 +11,7 @@ import { useEffect, useRef, useState } from "react";
 import type { Swiper as SwiperType } from "swiper";
 import { testimonials } from "@/app/data/testimonials";
 import Link from "next/link";
+import styles from "./Testimonials.module.css";
 
 
 function TestimonialCard({ t }: { t: (typeof testimonials)[0] }) {
@@ -100,6 +101,7 @@ export default function Testimonials() {
             1024: { slidesPerView: 3 },
           }}
           id="testimonials-swiper"
+          className={styles.root}
         >
           {testimonials.map((t, index) => (
             <SwiperSlide key={index} className="flex h-auto px-1">

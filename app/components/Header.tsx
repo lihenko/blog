@@ -9,6 +9,7 @@ const menu = [
   { label: "Maintenance", href: "/wordpress-maintenance" },
   { label: "Speed Up", href: "/speed-optimization" },
   { label: "Convert to Next.js", href: "/wordpress-to-nextjs" },
+  { label: "Figma to Next.js", href: "/figma-to-nextjs" },
 ];
 
 export default function Header() {

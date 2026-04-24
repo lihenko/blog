@@ -104,6 +104,8 @@ export default function Home() {
               width={450}
               height={698}
               className="mx-auto"
+              priority
+              fetchPriority="high"
             />
           </div>
           <div className="w-full px-4 text-center lg:text-left lg:w-1/2 lg:order-1">

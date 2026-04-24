@@ -152,10 +152,32 @@ export default function FixWordPressBugsPage() {
                     Speed Up My Website
                 </Link>
 
-                <a href="#process" className="btn btn-secondary">
+                <Link href="#process" className="btn btn-secondary">
                     See Optimization Process
-                </a>
+                </Link>
             </div>
+            <div className="mt-8 text-center">
+                <p className="text-sm text-gray-500 mb-3">
+                    Looking for a different solution?
+                </p>
+
+                <div className="flex flex-col items-center gap-2 text-sm">
+                    <Link
+                    href="/wordpress-to-nextjs"
+                    className="text-primary hover:underline"
+                    >
+                    For even better performance, consider moving to Next.js
+                    </Link>
+
+                    <Link
+                    href="/fix-wordpress-bugs"
+                    className="text-primary hover:underline"
+                    >
+                    Fix technical issues before optimizing your site
+                    </Link>
+                </div>
+            </div>
+
             <section className="py-8 px-4 text-center text-sm text-gray-500">
                 Trusted by businesses worldwide • 5★ Client Feedback • Fast turnaround
             </section>

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import styles from "@/app/components/BlogContent.module.css";
 
 import { Breadcrumbs } from "@/app/components/Breadcrumbs";
 import {
@@ -204,7 +205,7 @@ export default async function PostPage({
           )}
 
           <div
-            className="prose prose-lg mb-8 max-w-none prose-img:rounded-xl prose-img:w-full prose-img:h-auto"
+            className={styles.prose + " prose-lg mb-8 max-w-none prose-img:rounded-xl prose-img:w-full prose-img:h-auto"}
             dangerouslySetInnerHTML={{ __html: content }}
           />
 

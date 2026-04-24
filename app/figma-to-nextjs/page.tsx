@@ -7,37 +7,37 @@ import Link from "next/link";
 
 
 export const metadata: Metadata = {
-  title: "WordPress to Next.js Migration",
+  title: "Figma to Next.js Development",
   description:
-    "Migrate your WordPress website to Next.js for better performance, SEO, and scalability. Modernize your stack, improve Core Web Vitals, and boost conversions.",
+    "Convert your Figma design into a fast, responsive Next.js website with clean code, strong SEO foundations, and high performance.",
 
   alternates: {
-    canonical: "https://lihenko.com.ua/wordpress-to-nextjs",
+    canonical: "https://lihenko.com.ua/figma-to-nextjs",
   },
 
   openGraph: {
-    title: "WordPress to Next.js Migration | Performance Expert",
+    title: "Figma to Next.js Development | Performance Expert",
     description:
-      "Upgrade your WordPress site to Next.js for faster performance, better SEO, and a modern development stack.",
-    url: "https://lihenko.com.ua/wordpress-to-nextjs",
+      "Turn your Figma design into a production-ready Next.js website with responsive layouts, fast performance, and modern frontend best practices.",
+    url: "https://lihenko.com.ua/figma-to-nextjs",
     siteName: "Vladyslav Lykhenko",
     type: "website",
     images: [
       {
-        url: "/og-wordpress-to-nextjs.webp",
+        url: "/og-figma-to-nextjs.webp",
         width: 1200,
         height: 630,
-        alt: "WordPress to Next.js Migration Service",
+        alt: "Figma to Next.js Development Service",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "WordPress to Next.js Migration Expert",
+    title: "Figma to Next.js Expert",
     description:
-      "Migrate WordPress to Next.js for speed, SEO, and scalability improvements.",
-    images: ["/og-wordpress-to-nextjs.webp"],
+      "Convert Figma to Next.js with responsive, fast, and SEO-friendly implementation.",
+    images: ["/og-figma-to-nextjs.webp"],
   },
 
   robots: {
@@ -46,54 +46,57 @@ export const metadata: Metadata = {
   },
 };
 
+
 const problems = [
-  "Outdated WordPress architecture holding back performance, scalability, and modern development",
-  "Slow and bloated frontend caused by heavy themes, page builders, and plugin overload",
-  "Poor Core Web Vitals leading to lower Google rankings and lost organic traffic",
-  "Fragile WordPress setups that become hard to maintain and break with every update",
-  "Security vulnerabilities caused by outdated plugins, themes, and third-party dependencies",
-  "Slow WooCommerce performance under traffic spikes, resulting in abandoned carts and lost revenue",
+  "Static Figma designs do not show how layouts should behave across real screen sizes and devices",
+  "Design files often miss responsive rules, spacing logic, and edge cases needed for production",
+  "Without a proper frontend build, beautiful UI concepts can turn into slow and inconsistent websites",
+  "Inconsistent component structure makes future scaling and content updates harder to manage",
+  "Animations and interactions from the design need careful implementation to feel smooth and polished",
+  "Poor handoff from design to code can lead to visual mismatches, bugs, and unnecessary rework",
 ];
+
 
 const faqs = [
   {
-    question: "Why migrate from WordPress to Next.js?",
+    question: "What does Figma to Next.js development include?",
     answer:
-      "Next.js offers better performance, improved SEO, modern architecture, and full control over frontend and backend logic compared to traditional WordPress setups.",
+      "It includes converting your Figma design into a fully functional Next.js website with responsive layouts, reusable components, clean code, and production-ready frontend implementation.",
   },
   {
-    question: "Will I lose my content during migration?",
+    question: "Will the final website match my Figma design exactly?",
     answer:
-      "No. All content including pages, posts, and media can be safely migrated and structured into a modern Next.js application.",
+      "Yes. The goal is to translate the design as accurately as possible while also ensuring it works well across devices, browsers, and real-world content scenarios.",
   },
   {
-    question: "How long does a WordPress to Next.js migration take?",
+    question: "Is the website responsive on mobile and tablet?",
     answer:
-      "Depending on project complexity, migration usually takes from a few days to 2–3 weeks.",
+      "Yes. Responsive development is part of the process, so the layout is adapted for desktop, tablet, and mobile screens.",
   },
   {
-    question: "Will my website design change?",
+    question: "Will the website be optimized for performance?",
     answer:
-      "The design can be fully preserved or improved. Migration gives an opportunity to modernize UI while keeping your brand identity.",
+      "Yes. Next.js allows us to build fast-loading pages with optimized images, efficient rendering, and strong Core Web Vitals performance.",
   },
   {
-    question: "Is SEO preserved during migration?",
+    question: "Can you add animations and interactions from the design?",
     answer:
-      "Yes. Proper migration includes URL mapping, redirects, metadata transfer, and structured data preservation to maintain SEO rankings.",
+      "Yes. Hover states, transitions, scroll animations, and interactive UI elements can be implemented to match the intended user experience from Figma.",
   },
   {
-    question: "Can you integrate CMS with Next.js?",
+    question: "Do you also handle SEO setup in Next.js?",
     answer:
-      "Yes. We can integrate headless CMS solutions like Strapi, Sanity, or WordPress as a headless backend.",
+      "Yes. We can implement metadata, semantic HTML, structured content, and technical SEO foundations to help the website perform well in search engines.",
   },
 ];
+
 
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  name: "WordPress to Next.js Migration",
+  name: "Figma to Next.js Development",
   description:
-    "Professional WordPress to Next.js migration service focused on improving performance, scalability, SEO, and modernizing legacy WordPress websites into a fast React-based architecture.",
+    "Professional Figma to Next.js development service focused on converting UI designs into fast, responsive, SEO-friendly websites with clean code and modern frontend architecture.",
 
   provider: {
     "@type": "Person",
@@ -102,7 +105,7 @@ const serviceSchema = {
 
   areaServed: "Worldwide",
 
-  serviceType: "Website Migration & Modernization",
+  serviceType: "Figma to Next.js Development",
 
   category: "Web Development",
 
@@ -111,6 +114,7 @@ const serviceSchema = {
     availability: "https://schema.org/InStock",
   },
 };
+
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -142,20 +146,22 @@ export default function FixWordPressBugsPage() {
                 }}
             />
             <PageTitle
-                badge="Migration Service"
-                title="Migrate WordPress to Next.js"
-                subtitle="Upgrade your website to a modern Next.js architecture for better performance, SEO, scalability, and long-term maintainability."
+                badge="Development Service"
+                title="Convert Figma to Next.js"
+                subtitle="Turn your Figma design into a fast, responsive, and production-ready Next.js website with clean code, strong performance, and modern frontend best practices."
             />
+
 
             <div className="flex flex-wrap gap-3 justify-center mt-6">
                 <Link href="/contact" className="btn btn-primary">
-                    Start Migration
+                    Start Your Project
                 </Link>
 
                 <Link href="#process" className="btn btn-secondary">
-                    See Migration Process
+                    See Development Process
                 </Link>
             </div>
+
             <div className="mt-8 text-center">
                 <p className="text-sm text-gray-500 mb-3">
                     Looking for a different solution?
@@ -163,17 +169,17 @@ export default function FixWordPressBugsPage() {
 
                 <div className="flex flex-col items-center gap-2 text-sm">
                     <Link
-                    href="/figma-to-nextjs"
+                    href="/wordpress-to-nextjs"
                     className="text-primary hover:underline"
                     >
-                    Or build directly from Figma without WordPress
+                    Already have a WordPress site? Migrate to Next.js instead
                     </Link>
 
                     <Link
                     href="/speed-optimization"
                     className="text-primary hover:underline"
                     >
-                    Not ready to migrate? Optimize your current site
+                    Or optimize your current website instead
                     </Link>
                 </div>
             </div>
@@ -183,9 +189,8 @@ export default function FixWordPressBugsPage() {
             </section>
             <section className="py-16 lg:py-24 bg-gray-50">
                 <div className="container max-w-5xl mx-auto">
-
                     <h2 className="text-3xl md:text-5xl text-center font-bold mb-8">
-                        Limitations of WordPress Websites
+                    Common Challenges When Turning Figma Into a Real Website
                     </h2>
 
                     <div className="grid md:grid-cols-2 gap-4">
@@ -198,149 +203,137 @@ export default function FixWordPressBugsPage() {
                         </div>
                     ))}
                     </div>
-
                 </div>
             </section>
+
             <section className="py-16 lg:py-24">
                 <div className="container">
-
                     <h2 className="text-3xl md:text-5xl font-semibold tracking-tight mb-16 text-center">
-                    WordPress to Next.js Migration That Modernizes Your Website
+                    Figma to Next.js Development That Brings Your Design to Life
                     </h2>
 
                     <div className="flex flex-wrap -mx-4 items-center">
-
                     <div className="w-full lg:w-1/2 px-4 lg:order-2 space-y-6 mb-8 lg:mb-0">
-
                         <div className="flex gap-3">
                         <Search className="w-5 h-5 text-primary mt-1" />
                         <p className="text-gray-600">
-                            Full technical audit of your WordPress setup, structure, and performance bottlenecks before migration.
+                            Careful review of your Figma file, layout structure, components, and responsive behavior before development starts.
                         </p>
                         </div>
 
                         <div className="flex gap-3">
                         <Wrench className="w-5 h-5 text-primary mt-1" />
                         <p className="text-gray-600">
-                            Clean migration to Next.js with modern architecture, improved performance, and better scalability.
+                            Clean Next.js implementation with reusable components, responsive layout logic, and production-ready frontend architecture.
                         </p>
                         </div>
 
                         <div className="flex gap-3">
                         <ShieldCheck className="w-5 h-5 text-primary mt-1" />
                         <p className="text-gray-600">
-                            Safe transition with preserved content, SEO structure, and full functionality without breaking your site.
+                            Accurate design-to-code delivery with strong performance, consistent UI quality, and attention to SEO fundamentals.
                         </p>
                         </div>
-
                     </div>
 
                     <div className="w-full lg:w-1/2 px-4 lg:order-1">
                         <Image
-                        src="/wordpress-to-nextjs.webp"
-                        alt="WordPress to Next.js migration"
+                        src="/figma-to-nextjs.webp"
+                        alt="Figma to Next.js development"
                         width={1536}
                         height={1024}
                         className="mx-auto"
                         />
                     </div>
-
                     </div>
-
                 </div>
             </section>
+
             <section id="process" className="py-16 lg:py-24 bg-gray-50">
                 <div className="container">
-
                     <h2 className="text-3xl md:text-5xl font-semibold tracking-tight mb-16 text-center">
-                    WordPress to Next.js Migration Process
+                    Figma to Next.js Development Process
                     </h2>
 
                     <div className="flex flex-wrap -mx-4 items-center">
-
                     <div className="w-full lg:w-1/2 px-4 space-y-8 mb-8 lg:mb-0">
-
-                        {/* 1 */}
                         <div className="flex gap-3 mb-6">
                         <Search className="w-5 h-5 text-primary mt-1 shrink-0" />
                         <div>
                             <h3 className="font-medium text-2xl text-gray-900 mb-2">
-                            Audit
+                            Review
                             </h3>
                             <p className="text-lg font-medium mb-2">
-                            Analyze your WordPress website structure
+                            Analyze your Figma design structure
                             </p>
                             <p className="text-sm text-gray-600">
-                            Full audit of content, plugins, database, SEO structure, and performance to plan a safe and efficient migration strategy.
+                            Careful review of layouts, components, spacing, responsive states, and design details before development begins.
                             </p>
                         </div>
                         </div>
 
-                        {/* 2 */}
                         <div className="flex gap-3">
                         <Cog className="w-5 h-5 text-primary mt-1 shrink-0" />
                         <div>
                             <h3 className="font-medium text-2xl text-gray-900 mb-2">
-                            Migrate & Rebuild
+                            Build
                             </h3>
                             <p className="text-lg font-medium mb-2">
-                            Rebuild your website in Next.js
+                            Turn the design into a Next.js website
                             </p>
                             <p className="text-sm text-gray-600">
-                            Migration of content and functionality into a modern Next.js architecture with improved performance and scalability.
+                            Development of reusable components and responsive pages in Next.js with clean structure, strong performance, and accurate design implementation.
                             </p>
                         </div>
                         </div>
 
-                        {/* 3 */}
                         <div className="flex gap-3">
                         <CheckCircle className="w-5 h-5 text-primary mt-1 shrink-0" />
                         <div>
                             <h3 className="font-medium text-2xl text-gray-900 mb-2">
-                            Launch & Optimize
+                            Polish & Launch
                             </h3>
                             <p className="text-lg font-medium mb-2">
-                            Ensure everything works perfectly after migration
+                            Refine the final result for production
                             </p>
                             <p className="text-sm text-gray-600">
-                            Testing, SEO verification, redirects setup, and performance checks to ensure a smooth and stable launch.
+                            Final QA, responsive checks, performance improvements, and visual refinements to ensure the website is ready to launch.
                             </p>
                         </div>
                         </div>
-
                     </div>
 
                     <div className="w-full lg:w-1/2 px-4">
                         <Image
-                        src="/wordpress-to-nextjs-process.webp"
-                        alt="WordPress to Next.js migration process"
+                        src="/figma-to-nextjs-process.webp"
+                        alt="Figma to Next.js development process"
                         width={1536}
                         height={1024}
                         className="mx-auto"
                         />
                     </div>
-
                     </div>
-
                 </div>
             </section>
+
             <Testimonials />
             <section className="py-16 px-4 lg:py-24 text-center bg-black text-white">
                 <h2 className="text-3xl md:text-5xl font-bold">
-                    Ready to migrate from WordPress to Next.js?
+                    Ready to turn your Figma design into Next.js?
                 </h2>
 
                 <p className="text-gray-300 mt-3">
-                    Upgrade your website to a modern, fast, and scalable architecture built for performance and growth.
+                    Build a fast, responsive, and production-ready website based on your design with clean implementation and modern frontend standards.
                 </p>
 
                 <Link
                     href="/contact"
                     className="btn btn-primary mt-6"
                 >
-                    Start Migration
+                    Start Your Project
                 </Link>
             </section>
+
             <section className="py-16 lg:py-24">
                 <div className="container">
 

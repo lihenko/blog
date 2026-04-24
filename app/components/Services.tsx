@@ -25,6 +25,13 @@ const services = [
     href: "/wordpress-to-nextjs",
     icon: Code2,
   },
+  {
+    title: "Figma → Next.js",
+    description: "Convert Figma designs into fast, responsive Next.js websites.",
+    href: "/figma-to-nextjs",
+    icon: Code2,
+  },
+
 ];
 
 import Link from "next/link";
@@ -33,7 +40,8 @@ export default function Services() {
   return (
 
   
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto">
+
           {services.map((service) => {
             const Icon = service.icon;
 

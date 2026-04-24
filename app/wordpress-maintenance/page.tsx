@@ -3,6 +3,7 @@ import PageTitle from "@/app/components/PageTitle";
 import Testimonials from "@/app/components/Testimonials";
 import { ChevronDown, Search, Wrench, ShieldCheck, Bug, Cog, CheckCircle } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 
 export const metadata: Metadata = {
@@ -122,14 +123,36 @@ export default function WordPressMaintenancePage() {
             />
 
             <div className="flex flex-wrap gap-3 justify-center mt-6">
-                <a href="/contact" className="btn btn-primary">
+                <Link href="/contact" className="btn btn-primary">
                     Get Maintenance Plan
-                </a>
+                </Link>
 
-                <a href="#process" className="btn btn-secondary">
+                <Link href="#process" className="btn btn-secondary">
                     How It Works
-                </a>
+                </Link>
             </div>
+            <div className="mt-8 text-center">
+                <p className="text-sm text-gray-500 mb-3">
+                    Looking for a different solution?
+                </p>
+
+                <div className="flex flex-col items-center gap-2 text-sm">
+                    <Link
+                    href="/fix-wordpress-bugs"
+                    className="text-primary hover:underline"
+                    >
+                    Have a specific issue? Fix WordPress bugs instead
+                    </Link>
+
+                    <Link
+                    href="/speed-optimization"
+                    className="text-primary hover:underline"
+                    >
+                    Or optimize your website speed instead
+                    </Link>
+                </div>
+            </div>
+
             <section className="py-10 px-4 text-center">
                 <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
                     <div>💰 Plans from $25/month</div>

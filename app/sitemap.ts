@@ -9,6 +9,7 @@ const STATIC_PAGES = [
   { path: "/wordpress-maintenance", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/speed-optimization", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/wordpress-to-nextjs", priority: 0.8, changeFrequency: "monthly" as const },
+  { path: "/figma-to-nextjs", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/contact", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/free-audit", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/services", priority: 0.8, changeFrequency: "monthly" as const },

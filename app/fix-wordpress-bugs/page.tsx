@@ -3,6 +3,7 @@ import PageTitle from "@/app/components/PageTitle";
 import Testimonials from "@/app/components/Testimonials";
 import { ChevronDown, Search, Wrench, ShieldCheck, Bug, Cog, CheckCircle } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 
 export const metadata: Metadata = {
@@ -124,6 +125,28 @@ export default function FixWordPressBugsPage() {
                     See Process
                 </a>
             </div>
+            <div className="mt-8 text-center">
+                <p className="text-sm text-gray-500 mb-3">
+                    Looking for a different solution?
+                </p>
+
+                <div className="flex flex-col items-center gap-2 text-sm">
+                    <Link
+                    href="/wordpress-maintenance"
+                    className="text-primary hover:underline"
+                    >
+                    Need ongoing support? See WordPress maintenance
+                    </Link>
+
+                    <Link
+                    href="/speed-optimization"
+                    className="text-primary hover:underline"
+                    >
+                    Or optimize your website speed instead
+                    </Link>
+                </div>
+            </div>
+
             <section className="py-8 px-4 text-center text-sm text-gray-500">
                 Trusted by businesses worldwide • 5★ Client Feedback • Fast turnaround
             </section>

@@ -33,21 +33,18 @@ const averageRating =
 
 const schema = {
   "@context": "https://schema.org",
-  "@type": "Service",
-  name: "WP Expert WordPress Services",
+  "@type": "Organization",
+  name: "WP Expert",
   description:
     "WordPress bug fixing, speed optimization, maintenance and Next.js migration services.",
-  provider: {
-    "@type": "Person",
-    name: "WP Expert",
-  },
-
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: averageRating.toFixed(1),
+    ratingValue: Number(averageRating.toFixed(1)),
     reviewCount: testimonials.length,
+    ratingCount: testimonials.length,
+    bestRating: 5,
+    worstRating: 1,
   },
-
   review: testimonials.map((t) => ({
     "@type": "Review",
     author: {
@@ -57,10 +54,15 @@ const schema = {
     reviewRating: {
       "@type": "Rating",
       ratingValue: t.rating,
+      bestRating: 5,
+      worstRating: 1,
     },
     reviewBody: t.text,
   })),
 };
+
+
+
 
 export default function TestimonialsPage() {
   return (

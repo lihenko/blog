@@ -42,95 +42,61 @@ h1, h2, h3 {
   a{
     @apply cursor-pointer;
   }
+  .btn {
+    @apply inline-flex w-56 max-w-full items-center justify-center rounded-md px-5 py-2.5 text-sm font-semibold transition-all duration-200 text-center;
+    letter-spacing: 0.3px;
+  }
+
+
+  .btn-primary {
+    @apply bg-green-500 text-white shadow-md;
+  }
+
+  .btn-primary:hover {
+    @apply bg-green-600 shadow-lg;
+  }
+
+  .btn-primary:active {
+    @apply scale-95;
+  }
+
+
+  .btn-secondary {
+    @apply bg-blue-600 text-white shadow-sm;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-blue-700 shadow-md;
+  }
+
+  .btn-secondary:active {
+    @apply scale-95;
+  }
+
+  .btn-outline {
+    @apply  border border-green-500 bg-transparent text-green-500 transition-all;
+  }
+
+  .btn-outline:hover {
+    @apply bg-green-500 text-white shadow-md;
+  }
+
+  .btn-outline:active {
+    @apply scale-95;
+  }
+
+  .btn-ghost {
+    @apply bg-gray-100 border-transparent text-gray-700 shadow-none transition-all;
+  }
+
+  .btn-ghost:hover {
+    @apply bg-gray-400 text-white;
+  }
+
+  .btn-ghost:active {
+    @apply scale-95;
+  }
 }
 
-.btn {
-  @apply inline-flex w-56 max-w-full items-center justify-center rounded-md px-5 py-2.5 text-sm font-semibold transition-all duration-200;
-  letter-spacing: 0.3px;
-}
 
 
-.btn-primary {
-  @apply bg-green-500 text-white shadow-md;
-}
-
-.btn-primary:hover {
-  @apply bg-green-600 shadow-lg;
-}
-
-.btn-primary:active {
-  @apply scale-95;
-}
-
-
-.btn-secondary {
-  @apply bg-blue-600 text-white shadow-sm;
-}
-
-.btn-secondary:hover {
-  @apply bg-blue-700 shadow-md;
-}
-
-.btn-secondary:active {
-  @apply scale-95;
-}
-
-.btn-outline {
-  @apply  border border-green-500 bg-transparent text-green-500 transition-all;
-}
-
-.btn-outline:hover {
-  @apply bg-green-500 text-white shadow-md;
-}
-
-.btn-outline:active {
-  @apply scale-95;
-}
-
-.btn-ghost {
-  @apply bg-gray-100 border-transparent text-gray-700 shadow-none transition-all;
-}
-
-.btn-ghost:hover {
-  @apply bg-gray-400 text-white;
-}
-
-.btn-ghost:active {
-  @apply scale-95;
-}
-
-#testimonials-swiper .swiper-wrapper{
-  display: flex !important;
-  align-items: stretch;
-}
-
-#testimonials-swiper .swiper-slide{
-  height: auto;
-    display: flex !important; 
-    flex-direction: column;
-}
-
-.custom-pagination .swiper-pagination-bullet{
-  width: 12px;
-  height: 12px;
-}
-
-.custom-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
-}
-
-.prose img {
-  border-radius: 12px;
-  margin: 20px 0;
-}
-
-.prose a {
-  color: #2563eb;
-  text-decoration: underline;
-}
-
-.prose blockquote {
-  border-left: 4px solid #e5e7eb;
-  padding-left: 16px;
-  font-style: italic;
-}

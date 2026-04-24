@@ -1,0 +1,62 @@
+/* BlogContent.module.css */
+.prose :global(img) {
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.prose :global(a) {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.prose :global(blockquote) {
+  border-left: 4px solid #e5e7eb;
+  padding-left: 16px;
+  font-style: italic;
+}
+
+.prose :global(ul) {
+  list-style-type: disc;
+  margin: 20px 0;
+  padding-left: 24px;
+}
+
+.prose :global(ol) {
+  list-style-type: decimal;
+  margin: 20px 0;
+  padding-left: 24px;
+}
+
+.prose :global(li) {
+  margin: 8px 0;
+}
+
+.prose :global(li::marker) {
+  color: #374151;
+}
+
+.prose :global(code) {
+  background: #f3f4f6;
+  color: #111827;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.prose :global(pre) {
+  background: #111827;
+  color: #f9fafb;
+  padding: 16px;
+  border-radius: 12px;
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+.prose :global(pre code) {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  border-radius: 0;
+  font-size: 0.95em;
+}
