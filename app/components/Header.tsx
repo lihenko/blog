@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import MobileMenu from "./MobileMenu";
+import Image from "next/image";
 
 const menu = [
   { label: "Fix Bugs", href: "/fix-wordpress-bugs" },
@@ -22,7 +23,12 @@ export default function Header() {
 
           {/* Logo */}
           <Link href="/" className="text-xl font-bold">
-            WP Expert
+            <Image
+              src="/WPExpert.svg"
+              alt="Logo"
+              width={250}
+              height={40}
+            />
           </Link>
 
           {/* Desktop nav */}

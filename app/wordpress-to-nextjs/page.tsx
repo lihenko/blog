@@ -156,7 +156,7 @@ export default function FixWordPressBugsPage() {
                     See Migration Process
                 </Link>
             </div>
-            <div className="mt-8 text-center">
+            <div className="mt-8 text-center px-4">
                 <p className="text-sm text-gray-500 mb-3">
                     Looking for a different solution?
                 </p>
