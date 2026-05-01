@@ -10,11 +10,3 @@
   flex-direction: column;
 }
 
-.pagination :global(.swiper-pagination-bullet) {
-  width: 12px;
-  height: 12px;
-}
-
-.pagination :global(.swiper-pagination-bullet.swiper-pagination-bullet-active) {
-  background-color: var(--color-primary);
-}

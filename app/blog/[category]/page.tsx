@@ -145,6 +145,13 @@ export default async function CategoryPage({
     },
   };
 
+  function formatDescription(text: string) {
+    return text
+      .split(/\n\n+/)
+      .map(p => `<p>${p.replace(/\n/g, '<br/>')}</p>`)
+      .join('');
+  }
+
   return (
     <>
       <script
@@ -204,7 +211,7 @@ export default async function CategoryPage({
 
                     <Link
                       href={`/blog/${primaryCategory}/${post.slug}`}
-                      className="text-blue-600 hover:underline"
+                      className="text-[#0057B8] hover:underline"
                     >
                       Read more →
                     </Link>
@@ -241,7 +248,7 @@ export default async function CategoryPage({
           <section className={styles.prose + " prose-lg mx-auto mt-16 max-w-4xl bg-gray-50 p-6 rounded-xl"}>
             <div
               dangerouslySetInnerHTML={{
-                __html: currentCategory.description,
+                __html: formatDescription(currentCategory.description),
               }}
             />
           </section>

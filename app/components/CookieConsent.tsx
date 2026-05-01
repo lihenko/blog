@@ -74,7 +74,7 @@ export default function CookieConsent() {
 
           <button
             onClick={acceptAnalytics}
-            className="px-4 py-2 text-sm rounded-lg border border-blue-600 text-blue-600 hover:bg-blue-50 transition cursor-pointer"
+            className="px-4 py-2 text-sm rounded-lg border border-blue-600 text-[#0057B8] hover:bg-blue-50 transition cursor-pointer"
           >
             Analytics only
           </button>
@@ -89,11 +89,11 @@ export default function CookieConsent() {
         </div>
 
         {/* Small note */}
-        <p className="mt-3 text-xs text-gray-400">
+        <p className="mt-3 text-xs text-gray-600">
             Read our{" "}
             <a
                 href="/privacy-policy"
-                className="underline hover:text-gray-600"
+                className="underline hover:text-gray-800"
             >
                 Privacy Policy
             </a>

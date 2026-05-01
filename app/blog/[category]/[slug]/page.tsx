@@ -31,6 +31,17 @@ type TocItem = {
   level: "h2" | "h3";
 };
 
+function decodeHtmlEntities(text: string) {
+  return text
+    .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)))
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&mdash;/g, "—")
+    .replace(/&ndash;/g, "–")
+    .replace(/&hellip;/g, "…")
+    .replace(/&nbsp;/g, " ");
+}
+
 function slugify(text: string) {
   return text
     .toLowerCase()
@@ -50,7 +61,7 @@ function buildTocAndContent(html: string): {
   const content = html.replace(
     /<h([23])([^>]*)>(.*?)<\/h[23]>/gi,
     (_, level, attrs, innerHtml) => {
-      const text = stripHtml(innerHtml).trim();
+      const text = decodeHtmlEntities(stripHtml(innerHtml).trim());
       if (!text) return `<h${level}${attrs}>${innerHtml}</h${level}>`;
 
       let id = slugify(text);
@@ -185,12 +196,12 @@ export default async function PostPage({
 
           {toc.length > 0 && (
             <nav className="mb-8 rounded-2xl border border-gray-200 bg-gray-50 p-5">
-              <h2 className="mb-3 text-lg font-semibold">Зміст</h2>
+              <h2 className="mb-3 text-lg font-semibold">Table of Contents</h2>
               <ul className="space-y-2">
                 {toc.map((item) => (
                   <li
                     key={item.id}
-                    className={item.level === "h3" ? "ml-4" : ""}
+                    className={item.level === "h3" ? "ml-4 list-disc" : ""}
                   >
                     <a
                       href={`#${item.id}`}

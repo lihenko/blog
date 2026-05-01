@@ -65,6 +65,8 @@ export default function AboutPage() {
                             <Image
                             src="/VladyslavLykhenkoWithNotebook.webp"
                             alt="Vladyslav Lykhenko - WordPress & Next.js Developer"
+                            width={1069}
+                            height={780}
                             className="mx-auto"
                             priority
                             fetchPriority="high"
@@ -86,7 +88,6 @@ export default function AboutPage() {
                 </div>
             </section>
             
-
             <section className="py-16 lg:py-24 bg-gray-50">
                 <div className="container text-center">
 
@@ -140,6 +141,49 @@ export default function AboutPage() {
 
                     </div>
 
+                </div>
+            </section>
+            <section className="py-16 lg:py-20 bg-white">
+                <div className="container max-w-5xl">
+                    <div className="rounded-3xl border border-gray-200 bg-gradient-to-br from-white to-gray-50 p-8 lg:p-12">
+                    <div className="max-w-3xl">
+                        <span className="inline-flex items-center rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
+                        Public WordPress Contributions
+                        </span>
+
+                        <h2 className="text-3xl md:text-4xl font-semibold mt-5 mb-5">
+                        Real WordPress experience you can verify
+                        </h2>
+
+                        <p className="text-gray-600 text-lg leading-relaxed mb-4">
+                        Beyond client work, I also contribute to the WordPress ecosystem through
+                        publicly available plugins in the official WordPress.org repository.
+                        This adds an extra layer of transparency and reflects hands-on experience
+                        with real WordPress code, plugin architecture, and long-term maintenance.
+                        </p>
+
+                        <p className="text-gray-600 text-lg leading-relaxed mb-8">
+                        For clients, this means you are working with someone who does not only
+                        fix websites when problems appear, but also understands how WordPress
+                        works under the hood and how to build solutions that stay maintainable.
+                        </p>
+
+                        <div className="flex flex-wrap gap-4">
+                        <Link
+                            href="https://profiles.wordpress.org/obbdpu/#content-plugins"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-primary w-75"
+                        >
+                            View WordPress.org Profile
+                        </Link>
+
+                        <Link href="/services" className="btn btn-outline">
+                            Explore Services
+                        </Link>
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </section>
             <Testimonials />

@@ -56,7 +56,7 @@ export default function HowIWork() {
               >
                 {/* Icon */}
                 <div className="mb-4">
-                  <Icon className="w-8 h-8 text-blue-500" />
+                  <Icon className="w-8 h-8 text-[#0057B8]" />
                 </div>
 
                 {/* Title */}
@@ -68,11 +68,6 @@ export default function HowIWork() {
                 <p className="text-gray-600 text-sm leading-relaxed">
                   {step.description}
                 </p>
-
-                {/* Step number glow (premium touch) */}
-                <div className="absolute top-4 right-4 text-xs text-gray-300 font-semibold">
-                  0{i + 1}
-                </div>
               </div>
             );
           })}

@@ -11,6 +11,7 @@ const menu = [
   { label: "Speed Up", href: "/speed-optimization" },
   { label: "Convert to Next.js", href: "/wordpress-to-nextjs" },
   { label: "Figma to Next.js", href: "/figma-to-nextjs" },
+  { label: "SEO Optimization", href: "/seo-optimization" },
 ];
 
 export default function Header() {
@@ -19,15 +20,16 @@ export default function Header() {
   return (
     <header className="py-4 border-b relative bg-white">
       <div className="container">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-wrap items-center justify-between lg:justify-center xl:justify-between">
 
           {/* Logo */}
-          <Link href="/" className="text-xl font-bold">
+          <Link href="/" className="text-xl font-bold lg:mb-6 lg:w-full lg:text-center xl:mb-0 xl:w-auto xl:text-left">
             <Image
               src="/WPExpert.svg"
               alt="Logo"
               width={250}
               height={40}
+              className="mx-auto"
             />
           </Link>
 
@@ -54,13 +56,14 @@ export default function Header() {
 
           {/* Mobile button */}
           <button
-            className="lg:hidden"
-            onClick={() => setOpen(true)}
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24">
-              <path d="M4 7.5h16v1.5H4z" />
-              <path d="M4 15h16v1.5H4z" />
-            </svg>
+              className="lg:hidden"
+              aria-label="Open menu"
+              onClick={() => setOpen(true)}
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 7.5h16v1.5H4z" />
+                <path d="M4 15h16v1.5H4z" />
+              </svg>
           </button>
 
         </div>

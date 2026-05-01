@@ -168,7 +168,7 @@ export default async function BlogPage({ searchParams }: Props) {
 
                     <Link
                       href={getPostUrl(post)}
-                      className="text-blue-600 hover:underline"
+                      className="text-[#0057B8] hover:underline"
                     >
                       Read more →
                     </Link>

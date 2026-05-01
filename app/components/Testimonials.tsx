@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay, A11y } from "swiper/modules";
 import { Star, ChevronRight, ChevronLeft } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import type { Swiper as SwiperType } from "swiper";
@@ -87,7 +87,12 @@ export default function Testimonials() {
 
         {/* Swiper */}
         <Swiper
-          modules={[Pagination, Autoplay]}
+          modules={[Pagination, Autoplay, A11y]}
+          a11y={{
+            prevSlideMessage: "Previous slide",
+            nextSlideMessage: "Next slide",
+            paginationBulletMessage: "Go to slide {{index}}",
+          }}
           spaceBetween={24}
           loop={true}
           autoplay={{ delay: 4000 }}
@@ -113,7 +118,22 @@ export default function Testimonials() {
         {/* Pagination (mobile only) */}
         <div className="custom-pagination mt-8 flex justify-center md:hidden" />
 
-        <div className="hidden md:flex justify-end gap-3 mt-6"> <button onClick={() => swiperRef.current?.slidePrev()} className="w-10 h-10 flex items-center justify-center rounded-full border border-base-300 bg-white hover:bg-primary hover:text-white hover:border-primary cursor-pointer transition" > <ChevronLeft size={18} /> </button> <button onClick={() => swiperRef.current?.slideNext()} className="w-10 h-10 flex items-center justify-center rounded-full border border-base-300 bg-white hover:bg-primary hover:text-white hover:border-primary cursor-pointer transition" > <ChevronRight size={18} /> </button> </div>
+        <div className="hidden md:flex justify-end gap-3 mt-6">
+          <button
+            onClick={() => swiperRef.current?.slidePrev()}
+            aria-label="Previous slide"
+            className="w-10 h-10 flex items-center justify-center rounded-full border border-base-300 bg-white hover:bg-primary hover:text-white hover:border-primary cursor-pointer transition"
+          >
+            <ChevronLeft size={18} aria-hidden="true" />
+          </button>
+          <button
+            onClick={() => swiperRef.current?.slideNext()}
+            aria-label="Next slide"
+            className="w-10 h-10 flex items-center justify-center rounded-full border border-base-300 bg-white hover:bg-primary hover:text-white hover:border-primary cursor-pointer transition"
+          >
+            <ChevronRight size={18} aria-hidden="true" />
+          </button>
+        </div>
 
       </div>
     </section>

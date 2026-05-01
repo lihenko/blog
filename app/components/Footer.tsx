@@ -7,6 +7,7 @@ const mainMenu = [
   { label: "Speed Optimization", href: "/speed-optimization" },
   { label: "WP to Next.js", href: "/wordpress-to-nextjs" },
   { label: "Figma to Next.js", href: "/figma-to-nextjs" },
+  { label: "SEO Optimization", href: "/seo-optimization" },
 ];
 
 const legalMenu = [

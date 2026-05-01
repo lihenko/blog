@@ -12,7 +12,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
   --font-serif: var(--font-serif);
-  --color-primary: #22c55e;
+  --color-primary: #0057B8;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -49,11 +49,11 @@ h1, h2, h3 {
 
 
   .btn-primary {
-    @apply bg-green-500 text-white shadow-md;
+    @apply bg-green-700 text-white shadow-md;
   }
 
   .btn-primary:hover {
-    @apply bg-green-600 shadow-lg;
+    @apply bg-green-800 shadow-lg;
   }
 
   .btn-primary:active {
@@ -62,11 +62,11 @@ h1, h2, h3 {
 
 
   .btn-secondary {
-    @apply bg-blue-600 text-white shadow-sm;
+    @apply bg-[#0057B8] text-white shadow-sm;
   }
 
   .btn-secondary:hover {
-    @apply bg-blue-700 shadow-md;
+    @apply bg-[#004185] shadow-md;
   }
 
   .btn-secondary:active {
@@ -74,11 +74,11 @@ h1, h2, h3 {
   }
 
   .btn-outline {
-    @apply  border border-green-500 bg-transparent text-green-500 transition-all;
+    @apply  border border-green-700 bg-transparent text-green-700 transition-all;
   }
 
   .btn-outline:hover {
-    @apply bg-green-500 text-white shadow-md;
+    @apply bg-green-700 text-white shadow-md;
   }
 
   .btn-outline:active {
@@ -100,3 +100,14 @@ h1, h2, h3 {
 
 
 
+.custom-pagination .swiper-pagination-bullet {
+  width: 14px !important;
+  height: 14px !important;
+  margin: 0 8px !important;
+  background-clip: unset;
+  box-sizing: border-box;
+}
+
+.custom-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
+}

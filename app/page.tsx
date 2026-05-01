@@ -103,6 +103,7 @@ export default function Home() {
               alt="Vladyslav Lykhenko"
               width={450}
               height={698}
+              sizes="(max-width: 1024px) 100vw, 450px"
               className="mx-auto"
               priority
               fetchPriority="high"
@@ -198,7 +199,7 @@ export default function Home() {
 
           {/* Item */}
           <div className="p-6 border rounded-2xl hover:shadow-md transition">
-            <CheckCircle className="text-green-500 w-6 h-6 mb-4" />
+            <CheckCircle className="text-green-700 w-6 h-6 mb-4" />
             <h3 className="text-xl font-semibold mb-2">
               Performance First Approach
             </h3>
@@ -208,7 +209,7 @@ export default function Home() {
           </div>
 
           <div className="p-6 border rounded-2xl hover:shadow-md transition">
-            <CheckCircle className="text-green-500 w-6 h-6 mb-4" />
+            <CheckCircle className="text-green-700 w-6 h-6 mb-4" />
             <h3 className="text-xl font-semibold mb-2">
               Clean & Scalable Code
             </h3>
@@ -218,7 +219,7 @@ export default function Home() {
           </div>
 
           <div className="p-6 border rounded-2xl hover:shadow-md transition">
-            <CheckCircle className="text-green-500 w-6 h-6 mb-4" />
+            <CheckCircle className="text-green-700 w-6 h-6 mb-4" />
             <h3 className="text-xl font-semibold mb-2">
               Fast Delivery
             </h3>
@@ -228,7 +229,7 @@ export default function Home() {
           </div>
 
           <div className="p-6 border rounded-2xl hover:shadow-md transition">
-            <CheckCircle className="text-green-500 w-6 h-6 mb-4" />
+            <CheckCircle className="text-green-700 w-6 h-6 mb-4" />
             <h3 className="text-xl font-semibold mb-2">
               WordPress + Next.js Expert
             </h3>
@@ -238,7 +239,7 @@ export default function Home() {
           </div>
 
           <div className="p-6 border rounded-2xl hover:shadow-md transition">
-            <CheckCircle className="text-green-500 w-6 h-6 mb-4" />
+            <CheckCircle className="text-green-700 w-6 h-6 mb-4" />
             <h3 className="text-xl font-semibold mb-2">
               SEO & Conversion Focused
             </h3>
@@ -248,7 +249,7 @@ export default function Home() {
           </div>
 
           <div className="p-6 border rounded-2xl hover:shadow-md transition">
-            <CheckCircle className="text-green-500 w-6 h-6 mb-4" />
+            <CheckCircle className="text-green-700 w-6 h-6 mb-4" />
             <h3 className="text-xl font-semibold mb-2">
               Reliable Communication
             </h3>

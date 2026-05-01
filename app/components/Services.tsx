@@ -1,4 +1,4 @@
-import { Wrench, RefreshCw, Zap, Code2 } from "lucide-react";
+import { Wrench, RefreshCw, Zap, Code2, Search } from "lucide-react";
 
 const services = [
   {
@@ -31,7 +31,12 @@ const services = [
     href: "/figma-to-nextjs",
     icon: Code2,
   },
-
+  {
+    title: "SEO Optimization",
+    description: "Improve search engine visibility and ranking for your website.",
+    href: "/seo-optimization",
+    icon: Search,
+  },
 ];
 
 import Link from "next/link";
@@ -51,9 +56,9 @@ export default function Services() {
                 href={service.href}
                 className="group bg-white border rounded-2xl p-6 shadow-sm hover:shadow-xl transition hover:-translate-y-1"
               >
-                <Icon className="w-8 h-8 text-blue-600 mb-4" />
+                <Icon className="w-8 h-8 text-[#0057B8] mb-4" />
 
-                <h3 className="text-lg font-semibold mb-2 group-hover:text-blue-600 transition">
+                <h3 className="text-lg font-semibold mb-2 group-hover:text-[#0057B8] transition">
                   {service.title}
                 </h3>
 
@@ -61,7 +66,7 @@ export default function Services() {
                   {service.description}
                 </p>
 
-                <div className="mt-4 text-sm font-medium text-blue-600 opacity-0 group-hover:opacity-100 transition">
+                <div className="mt-4 text-sm font-medium text-[#0057B8] opacity-0 group-hover:opacity-100 transition">
                   Learn more →
                 </div>
               </Link>

@@ -5,7 +5,7 @@
 }
 
 .prose :global(a) {
-  color: #2563eb;
+  color: #0057B8;
   text-decoration: underline;
 }
 
@@ -59,4 +59,61 @@
   padding: 0;
   border-radius: 0;
   font-size: 0.95em;
+}
+
+.prose :global(table) {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 0.95em;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px #e5e7eb;
+}
+
+.prose :global(thead) {
+  background: #f9fafb;
+}
+
+.prose :global(th) {
+  text-align: left;
+  padding: 12px 16px;
+  font-weight: 600;
+  color: #111827;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.prose :global(td) {
+  padding: 12px 16px;
+  color: #374151;
+  border-bottom: 1px solid #f3f4f6;
+  vertical-align: top;
+}
+
+.prose :global(tr:last-child td) {
+  border-bottom: none;
+}
+
+.prose :global(tbody tr:hover) {
+  background: #f9fafb;
+  transition: background 0.15s ease;
+}
+
+.prose :global(tbody tr:nth-child(even)) {
+  background: #fafafa;
+}
+
+.prose :global(tbody tr:nth-child(even):hover) {
+  background: #f3f4f6;
+}
+
+/* responsive */
+@media (max-width: 640px) {
+  .prose :global(table) {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: none;
+    border: 1px solid #e5e7eb;
+  }
 }
